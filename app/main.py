@@ -32,7 +32,7 @@ app = FastAPI(lifespan=lifespan)
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
-        "https://gachacoin.ru"
+        "https://gachacoin.ru",
         "https://*.telegram.org",
     ],
     allow_credentials=True,
